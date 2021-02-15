@@ -3,4 +3,19 @@ body {
 }
 .app-canvas {
   background-color: #77fde0;
+  width: 100%;
+}
+
+.wrapper {
+  position: relative;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+.wrapper .app-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
