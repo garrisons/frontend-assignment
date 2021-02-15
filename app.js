@@ -53,12 +53,10 @@ function render() {
 
 function drawDottedLineAround(startX, startY, width, height) {
   state.canvasContext.setLineDash([5, 3]);
+  state.canvasContext.lineWidth = 2;
+  state.canvasContext.strokeStyle = "green";
   state.canvasContext.beginPath();
-  state.canvasContext.moveTo(startX - 1, startY - 1);
-  state.canvasContext.lineTo(startX + width + 1, startY - 1);
-  state.canvasContext.lineTo(startX + width + 1, startY + height + 1);
-  state.canvasContext.lineTo(startX - 1, startY + height + 1);
-  state.canvasContext.lineTo(startX - 1, startY - 1);
+  state.canvasContext.rect(startX - 2, startY - 2, width + 4, height + 4);
   state.canvasContext.stroke();
 }
 
