@@ -1,3 +1,9 @@
+## How run this project
+
+I used [live server](https://www.npmjs.com/package/live-server), but you can use any lightweight server.
+
+It's just javascript... so no frameworks or anything. Hope that's ok!
+
 ## Streamlabs Frontend Take Home Assignment
 
 Hi there! We are happy you are interested in joining the frontend engineering team here at Streamlabs. We are on a mission of building tools to help content creators around the world grow, and we are excited to have you on board.
