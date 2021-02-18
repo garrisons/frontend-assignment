@@ -93,7 +93,9 @@ async function setInitialState() {
   state.images = await loadImages(imgUrls);
   const store = JSON.parse(localStorage.getItem("canvas"));
   for (let index = 0; index < store.images.length; index++) {
-    state.images[index].data = store.images[index].data;
+    if (state.images[index]) {
+      state.images[index].data = store.images[index].data;
+    }
   }
   state.canvas = document.getElementById("canvas");
   state.canvasContext = state.canvas.getContext("2d");
